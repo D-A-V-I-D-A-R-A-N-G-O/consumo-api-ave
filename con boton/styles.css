@@ -25,10 +25,10 @@ button, select{
  } 
  img {
    border-radius: 30px;   
-   max-width: 70%;
-   min-width: 10%;
-   max-height: 70%;
-   min-height: 10%;
+   max-width: 80%;
+   min-width: none;
+   max-height: 80%;
+   min-height: none;
 }
 #todo{
    padding-top: 10px;
@@ -41,7 +41,7 @@ button, select{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 2%;
  }
  input{
     font-size: 110%;
@@ -59,23 +59,25 @@ button, select{
     margin: 10px;
 
    }
-   #moDificar, #eDitar{
+   #moDificar, #eDitar, #borrar{
       margin-top: 5px;
       background-color: white;
       font-size: 125%;
-      margin-bottom: 10px;
    }
    #arriva{
       display: flex;
       flex-direction: column;   
    }
-   #botones, #crear, #borrar{
+   #botones, #crear{
       font-size: 120%;
-      margin-top: 10px;
+      margin-top: 1%;
       display: flex;
       justify-content: space-evenly
    }
-   
+   #eDitar{
+      margin-bottom: 10px ;
+   }
+
 
 
 

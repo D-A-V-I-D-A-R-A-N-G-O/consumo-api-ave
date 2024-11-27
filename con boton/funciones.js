@@ -112,9 +112,7 @@ function eDitar() {
         .then(respuesta => respuesta.json())
         .then(datos => {
           console.log(datos);
-          reciBir();  
-         
-
+          reciBir(); 
         })
         .catch(error => console.error('no se pudo modificar', error));
       }
