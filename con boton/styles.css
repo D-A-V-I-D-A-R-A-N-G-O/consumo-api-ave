@@ -69,6 +69,11 @@ button, select{
       display: flex;
       flex-direction: column;   
    }
+   #botones{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-evenly
+   }
 
 
 

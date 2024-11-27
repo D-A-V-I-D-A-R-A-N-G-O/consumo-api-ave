@@ -151,7 +151,7 @@ function eDitar() {
             if (!nombre || !alimento || !viene || !imgUrl) {
                 return alert('Todos los campos son obligatorios');
             }
-    
+
             const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/', {
                 method: 'POST',
                 headers: {
@@ -175,4 +175,22 @@ function eDitar() {
         }
     }
     
+async function eLiminar() {
+  let Pepe = document.getElementById('lista').value
+   try {
+    const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+   }
+   });
+    const datos = await response.json();
+    console.log(datos);
+    await reciBir();  
+    window.location.reload();
+    alert('a sido exterminado')
+  } catch (error) {
+   console.error('No se pudo crear', error);
+}
+}
   
