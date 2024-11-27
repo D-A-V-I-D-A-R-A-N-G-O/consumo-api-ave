@@ -85,8 +85,11 @@ function eDitar() {
         <input type="text" id="viene"  placeholder="${caRita()}">
         <h2>URL de la imagen</h2>
         <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
+        <div id="boton">
         <button onclick="moDificar()"  id="moDificar">guardar</button>
         <button id="borrar" onclick="eLiminar()">BORRAR</button>
+        </div>
+        
     </div>`
     document.getElementById('formul').style.display = 'block';
     })

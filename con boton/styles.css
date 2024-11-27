@@ -36,7 +36,7 @@ button, select{
    justify-content: space-evenly;
    flex-wrap: wrap;
 }
- #aves-container, #formu , #moDificar    {
+ #aves-container, #formu    {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +77,16 @@ button, select{
    #eDitar{
       margin-bottom: 10px ;
    }
-
+   #boton{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+   }
+   #borrar{
+      background-color: red;
+      color: white;
+      border-color: whitesmoke;
+   }
 
 
 
