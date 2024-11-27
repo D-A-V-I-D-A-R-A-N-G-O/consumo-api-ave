@@ -17,7 +17,6 @@ button, select{
     font-family: monospace;
     border-radius: 7px;
 }
-
 #lista{
    text-align: center;
    background-color: aqua;
@@ -30,36 +29,7 @@ button, select{
    max-height: 80%;
    min-height: none;
 }
-#todo{
-   padding-top: 10px;
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-}
- #aves-container, #formu    {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
- }
- input{
-    font-size: 110%;
- }
- #personaje, #formul{
-   margin-top: 20px;
-   background-color: aqua;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    min-width: none;
-    max-height: 550px;
-    min-height: none;
-    margin: 10px;
-
-   }
-   #moDificar, #eDitar, #borrar{
+#moDificar, #eDitar, #borrar{
       margin-top: 5px;
       background-color: white;
       font-size: 125%;
@@ -85,9 +55,50 @@ button, select{
    #borrar{
       background-color: red;
       color: white;
-      border-color: whitesmoke;
+      border-color: white;
    }
+   img {
+     
+      min-width: none;
+      min-height: none;
+      max-width: 60%;
+      max-height: 60%;
+    }
+    #todo{
+      display: flex;
+      align-content: space-between;
+      flex-wrap: wrap;
 
+    }
+    #todo{
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+   }
+    #aves-container, #formularioo    {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       padding: 2%;
+    }
+    input{
+       font-size: 110%;
+    }
+    #sujeto, #formulario{
+      margin-top: 20px;
+      background-color: aqua;
+       border-radius: 30px;
+       width: 100%;
+       height: 100%;
+       max-width: 300px;
+       min-width: none;
+       max-height: 550px;
+       min-height: none;
+       margin: 10px;
+   
+      }
 
 
 
