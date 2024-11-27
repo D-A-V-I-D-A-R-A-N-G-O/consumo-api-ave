@@ -124,8 +124,10 @@ function eDitar() {
 
       async function cRear() {      
         try {
+           
             const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/');
             const data = await response.json();
+           
             document.getElementById('formul').innerHTML =    
                 `<div id="formu">
                     <h2>Nombre</h2>
