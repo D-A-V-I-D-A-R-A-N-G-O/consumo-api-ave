@@ -158,7 +158,7 @@ function eDitar() {
                 },
                 body: JSON.stringify({ 
                 nombre: document.getElementById('nombre').value, 
-                alimentación: document.getElementById('alimento').value, 
+                alimentacion: document.getElementById('alimento').value, 
                 Viene : document.getElementById('viene').value, 
                 imgUrl: document.getElementById('imgUrl').value
                   }),
