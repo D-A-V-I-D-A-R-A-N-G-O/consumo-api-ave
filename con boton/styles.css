@@ -46,7 +46,7 @@ button, select{
  input{
     font-size: 110%;
  }
- #aves-container, #formul{
+ #personaje, #formul{
    margin-top: 20px;
    background-color: aqua;
     border-radius: 30px;
@@ -56,6 +56,8 @@ button, select{
     min-width: none;
     max-height: 500px;
     min-height: none;
+    margin: 10px;
+
    }
    #moDificar, #eDitar{
       margin-top: 5px;
