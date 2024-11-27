@@ -3,7 +3,7 @@ async function obtenerlistaAves() {
       const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves');
       const data = await response.json();
       const listaContainer = document.getElementById('lista');
-      listaContainer.innerHTML = '';  // Limpiar la lista antes de cargar los nuevos datos
+      listaContainer.innerHTML = '';  
       data.forEach(ave => {
           const aveElement = document.createElement('option');
           aveElement.value = ave.id;
