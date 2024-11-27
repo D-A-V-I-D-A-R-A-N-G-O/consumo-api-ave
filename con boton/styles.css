@@ -1,0 +1,72 @@
+body {
+    font-family: OCR A Std, monospace;
+    background: rgb(122,228,116);
+    background: linear-gradient(90deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+}
+img {
+    padding: 40pzx;
+    border-radius: 60px;
+    width: 250px;
+}
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+
+button, select{
+    align-self: center;
+    border-width: 3px;
+    font-family: monospace;
+    border-radius: 7px;
+}
+
+ #formu  {
+    padding: 10px;
+    
+ }
+ 
+ select{
+    text-align: center;
+ }
+ h1 {
+    margin-block: 10px;
+    border-radius: 40px;
+ }
+ #aves-container, #formu , #moDificar    {
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3px;
+ }
+ input{
+    border-radius: 5px;
+    font-size: 150%;
+ }
+
+ #personaje{
+    background-color: aqua;
+    border-radius: 40px;
+    width: 115%;
+    height: 105%;
+   }
+
+#todo{
+   display: flex;
+   justify-content: space-around;
+}
+#formu{
+   background-color: aqua;
+    border-radius: 40px;
+    width: 95%;
+    height: 95%;
+
+}
+#moDificar, #eDitar{
+   margin-top: 10px;
+   background-color: antiquewhite;
+   font-size: 120%;
+   margin-bottom: 10px;
+}
+ 

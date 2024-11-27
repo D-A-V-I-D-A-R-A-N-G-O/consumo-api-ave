@@ -1,0 +1,39 @@
+body {
+    font-family: monospace;
+    background: rgb(122,228,116);
+    background: linear-gradient(90deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
+    align-content: center;
+}
+.ave {
+    display: inline-block;
+    padding: 20px;
+    align-items: center;
+}
+img {
+    border-radius: 60px;
+    width: 250px;
+}
+h1 {
+    text-align: center;
+
+}
+.ave h2{
+    text-align: center;
+    background-color: rgb(147, 211, 229);
+    border-radius: 40px;
+}
+h1 {
+    font-size: 400%;
+    
+}
+.ave p {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 40px;
+}
+.ave h3 {
+    background-color: aqua;
+    border-radius: 5px;
+    text-align: center;
+
+}
