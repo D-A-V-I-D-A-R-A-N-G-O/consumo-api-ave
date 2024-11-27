@@ -69,11 +69,13 @@ button, select{
       display: flex;
       flex-direction: column;   
    }
-   #botones{
+   #botones, #crear, #borrar{
+      font-size: 120%;
       margin-top: 10px;
       display: flex;
       justify-content: space-evenly
    }
+   
 
 
 

@@ -87,8 +87,7 @@ function eDitar() {
         <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
         
         <button onclick="moDificar()"  id="moDificar">guardar</button>
-
-
+        <button id="borrar" onclick="eLiminar()">BORRAR</button>
     </div>`
     document.getElementById('formul').style.display = 'block';
     })
@@ -130,6 +129,7 @@ function eDitar() {
            
             document.getElementById('formul').innerHTML =    
                 `<div id="formu">
+                    <h2>personaje nuevo</h2>
                     <h2>Nombre</h2>
                     <input type="text" id="nombre" placeholder="NOMBRE">
                     <h2>Alimentación</h2>
@@ -159,7 +159,6 @@ function eDitar() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                
                 body: JSON.stringify({ 
                 nombre: document.getElementById('nombre').value, 
                 alimentación: document.getElementById('alimento').value, 
