@@ -9,6 +9,7 @@ async function obtenerlistaAves() {
           aveElement.value = ave.id;
           aveElement.textContent = ave.nombre;
           listaContainer.appendChild(aveElement);
+             document.getElementById('todo').style.display = 'none'
       });
       console.log(data);
   } catch (error) {
@@ -41,14 +42,17 @@ function reciBir() {
         return pepe}
       document.getElementById('aves-container').innerHTML =    
             `
-            <div id="sujeto">
                 <h2 >${datos.nombre}</h2>
                 <img src="${datos.imgUrl}" alt="${datos.nombre}">
                 <h2>ALIMENTACIÓN: ${datos.alimentacion}</h2>
                 <h2>VIENE: ${caRita()}</h2>
                 <button id="eDitar" onclick="eDitar()" >EDITAR</button>
-            </div>
+            
               `
+              document.getElementById('todo').style.display = 'flex'
+              document.getElementById('aves-container').style.display = 'flex'
+              
+
     })
     } catch (error) {
       console.error('no se pudo encontrar', error)
@@ -78,7 +82,6 @@ function eDitar() {
         return pepe}
       document.getElementById('formularioo').innerHTML =    
             `
-        <div id="formulario">
         <h2>Nombre</h2>
         <input type="text" id="nombre" placeholder=${datos.nombre}>
         <h2>Alimentación</h2>
@@ -91,9 +94,8 @@ function eDitar() {
             <button onclick="moDificar()"  id="moDificar">GUARDAR</button>
             <button id="borrar" onclick="eLiminar()">BORRAR</button>
         </div>
-        </div>
         `
-    document.getElementById('formularioo').style.display = 'block';
+    document.getElementById('formularioo').style.display = 'flex';
     })
     } catch (error) {
       console.error('no se pudo encontrar', error)
@@ -130,8 +132,8 @@ function eDitar() {
             const data = await response.json();
            
             document.getElementById('formularioo').innerHTML =    
-                `<div id="formulario">
-                  <h2>personaje nuevo</h2>
+
+            `      <h2>personaje nuevo</h2>
                     <h2>Nombre</h2>
                     <input type="text" id="nombre" placeholder="NOMBRE">
                     <h2>Alimentación</h2>
@@ -141,9 +143,12 @@ function eDitar() {
                     <h2>URL de la imagen</h2>
                     <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
                     <button onclick="mAke()" id="guardar">Guardar</button>
-                  </div>
                 `
-            document.getElementById('formularioo').style.display = 'block';
+              
+            document.getElementById('todo').style.display = 'flex';
+            document.getElementById('formularioo').style.display = 'flex';
+            document.getElementById('aves-container').style.display = 'none'
+
         } catch (error) {
             console.error('No se pudo encontrar', error);
         }
