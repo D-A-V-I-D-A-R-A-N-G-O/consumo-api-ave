@@ -89,9 +89,9 @@ function eDitar() {
       document.getElementById('formularioo').innerHTML =    
             `
         <h2>Nombre</h2>
-        <input type="text" id="nombre" placeholder=${datos.nombre}>
+        <input type="text" id="nombre" placeholder="${datos.nombre}">
         <h2>Alimentación</h2>
-        <input type="text" id="alimento" placeholder=${datos.alimentacion}>
+        <input type="text" id="alimento" placeholder="${datos.alimentacion}">
         <h2>Viene</h2>
         <input type="text" id="viene"  placeholder="${caRita()}">
         <h2>URL de la imagen</h2>
