@@ -1,7 +1,4 @@
-@media (max-width: 1250px) {
 
- }
- 
 body {
     font-family: OCR A Std, monospace;
     background: rgb(122,228,116);
@@ -25,6 +22,8 @@ button, select{
    text-align: center;
    background-color: aqua;
    font-size: 150%;
+   border-color: antiquewhite;
+
  } 
  img {
    border-radius: 30px;   
@@ -33,11 +32,13 @@ button, select{
    max-height: 90%;
    min-height: none;
 }
-#moDificar, #eDitar, #borrar, #guardar{
+#moDificar, #eDitar, #borrar, #guardar, #crear{
       margin-top: 5px;
       background-color: white;
       font-size: 125%;
       margin-bottom: 10px ;
+      border-color: antiquewhite;
+
       
 
    }
@@ -56,7 +57,6 @@ button, select{
    #boton{
       font-size: 120%;
       margin-top: 1%;
-      
       justify-content: space-evenly;
       flex-wrap: wrap;
    }
@@ -66,7 +66,9 @@ button, select{
       border-color: white;
    }
    img {
-     
+      border-color: antiquewhite;
+      border-style: groove;
+      border-width: 7px;
       min-width: none;
       min-height: none;
       max-width: 60%;
@@ -89,7 +91,9 @@ button, select{
        text-align: center;
        padding: 2%;
        margin-top: 20px;
-       background-color: aqua;
+       background: rgb(122,228,116);
+    background: linear-gradient(180deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
+   
         border-radius: 30px;
         width: 80%;
         height: 80%;
@@ -98,6 +102,10 @@ button, select{
         max-height: 550px;
         min-height: 375px;
         margin: 10px;
+        border-color: antiquewhite;
+        border-spacing: 9px;
+        border-style: groove;
+        border-width: 7px;
     
     }
     input{
@@ -106,6 +114,8 @@ button, select{
        max-width: 100%;
        min-width: none;
        border-radius: 5px;
+       border-color: antiquewhite;
+
     }
   
 

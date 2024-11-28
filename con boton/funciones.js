@@ -149,7 +149,7 @@ function eDitar() {
                   <h2>Viene</h2>
                   <input type="text" id="viene"  placeholder="VIENE">
                   <h2>URL de la imagen</h2>
-                  <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
+                  <input type="text" id="imgUrl" placeholder="URL DE IMAGEN">
                   <button onclick="mAke()" id="guardar">Guardar</button>
             `
               
