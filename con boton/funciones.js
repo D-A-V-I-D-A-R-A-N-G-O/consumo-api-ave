@@ -40,7 +40,11 @@ function reciBir() {
         } else if(datos.Viene)
             pepe = [datos.Viene]
         return pepe}
-      document.getElementById('aves-container').innerHTML =    
+        if (!datos.nombre) {
+          return alert("ese man no existe"),
+          window.location.reload()
+        } else {
+          document.getElementById('aves-container').innerHTML =    
             `
                 <h2 >${datos.nombre}</h2>
                 <img src="${datos.imgUrl}" alt="${datos.nombre}">
@@ -51,11 +55,13 @@ function reciBir() {
               `
               document.getElementById('todo').style.display = 'flex'
               document.getElementById('aves-container').style.display = 'flex'
-              
-
+        }
+      
     })
     } catch (error) {
       console.error('no se pudo encontrar', error)
+      window.location.reload()
+
     }
   }
   
@@ -121,7 +127,8 @@ function eDitar() {
           console.log(datos);
           reciBir(); 
         })
-        .catch(error => console.error('no se pudo modificar', error));
+        .catch(error => 
+          console.error('no se pudo modificar', error));
       }
       
 
@@ -133,17 +140,18 @@ function eDitar() {
            
             document.getElementById('formularioo').innerHTML =    
 
-            `      <h2>personaje nuevo</h2>
-                    <h2>Nombre</h2>
-                    <input type="text" id="nombre" placeholder="NOMBRE">
-                    <h2>Alimentación</h2>
-                    <input type="text" id="alimento" placeholder="ALIMENTO">
-                    <h2>Viene</h2>
-                    <input type="text" id="viene"  placeholder="VIENE">
-                    <h2>URL de la imagen</h2>
-                    <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
-                    <button onclick="mAke()" id="guardar">Guardar</button>
-                `
+            `      
+            <h2>personaje nuevo</h2>
+                  <h2>Nombre</h2>
+                  <input type="text" id="nombre" placeholder="NOMBRE">
+                  <h2>Alimentación</h2>
+                  <input type="text" id="alimento" placeholder="ALIMENTO">
+                  <h2>Viene</h2>
+                  <input type="text" id="viene"  placeholder="VIENE">
+                  <h2>URL de la imagen</h2>
+                  <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
+                  <button onclick="mAke()" id="guardar">Guardar</button>
+            `
               
             document.getElementById('todo').style.display = 'flex';
             document.getElementById('formularioo').style.display = 'flex';
@@ -156,22 +164,28 @@ function eDitar() {
     
     async function mAke() {
         try {
+            const nombre = document.getElementById('nombre').value
+            const alimentacion = document.getElementById('alimento').value
+            const Viene = document.getElementById('viene').value
+            const imgUrl = document.getElementById('imgUrl').value
 
-            if (!nombre || !alimento || !viene || !imgUrl) {
-                return alert('Todos los campos son obligatorios');
-            }
+            if (!nombre || !alimento || !Viene || !imgUrl) {
+              return alert('Todos los campos son obligatorios');
+          }
 
             const response = await fetch('http://181.133.27.242:8080/API/aves/', {
+              
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ 
-                nombre: document.getElementById('nombre').value, 
-                alimentacion: document.getElementById('alimento').value, 
-                Viene : document.getElementById('viene').value, 
-                imgUrl: document.getElementById('imgUrl').value
-                  }),
+                body: JSON.stringify({
+                nombre,
+                alimentacion, 
+                Viene,  
+                imgUrl
+                
+              }),
             });
     
             const datos = await response.json();
@@ -194,7 +208,6 @@ async function eLiminar() {
    });
     const datos = await response.json();
     console.log(datos);
-    await reciBir();  
     window.location.reload();
     alert('a sido exterminado')
   } catch (error) {
