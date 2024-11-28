@@ -92,8 +92,7 @@ button, select{
        padding: 2%;
        margin-top: 20px;
        background: rgb(122,228,116);
-    background: linear-gradient(180deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
-   
+      background: linear-gradient(270deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
         border-radius: 30px;
         width: 80%;
         height: 80%;
@@ -115,9 +114,13 @@ button, select{
        min-width: none;
        border-radius: 5px;
        border-color: antiquewhite;
-
+       border-width: 3px;
     }
-  
+    #formularioo h2, #aves-container h2{
+      background-color: aqua;
+      border-radius: 5px;
+      width: 80%;
+    }
 
 
 
