@@ -7,9 +7,8 @@ body {
 }
 #titulo {
    text-align: center;
-   font-size: 300%;
-   margin-block: 1%;
-   padding: 10px;
+   font-size: 200%;
+   padding: 5px;
 
 }
 button, select{
@@ -45,6 +44,11 @@ button, select{
    #arriva{
       display: flex;
       flex-direction: column;   
+      height: 150px;
+      max-height: 80%;
+      min-height: min-content;
+      max-width: 100%;
+      min-width: 0%;
    }
    #crear{
       font-size: 120%;
@@ -78,10 +82,8 @@ button, select{
       display: flex;
       align-content: space-between;
       flex-wrap: wrap;
-      padding-top: 10px;
-      display: flex;
+      padding-top: 5px;
       justify-content: space-evenly;
-      flex-wrap: wrap;
    }
     #aves-container, #formularioo    {
        display: flex;
@@ -94,11 +96,11 @@ button, select{
        background: rgb(122,228,116);
       background: linear-gradient(270deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
         border-radius: 30px;
-        width: 80%;
-        height: 80%;
+        width: 70%;
+        height: 70%;
         max-width: 270px;
         min-width: 225px;
-        max-height: 425px;
+        max-height: 550px;
         min-height: 375px;
         margin: 10px;
         border-color: antiquewhite;

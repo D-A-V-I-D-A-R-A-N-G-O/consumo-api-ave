@@ -191,8 +191,9 @@ function eDitar() {
             const datos = await response.json();
             console.log(datos);
             await reciBir();  
-            window.location.reload();
-        } catch (error) {
+            obtenerlistaAves();
+
+          } catch (error) {
             console.error('No se pudo crear', error);
         }
     }
