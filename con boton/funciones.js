@@ -1,6 +1,6 @@
 async function obtenerlistaAves() {
   try {
-      const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves');
+      const response = await fetch('http://181.133.27.242:8080/API/aves');
       const data = await response.json();
       const listaContainer = document.getElementById('lista');
       listaContainer.innerHTML = '';  
@@ -23,7 +23,7 @@ function reciBir() {
     let Pepe = document.getElementById('lista').value
     
     try {
-      fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe)
+      fetch('http://181.133.27.242:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       document.getElementById('formularioo').style.display = 'none';
@@ -64,7 +64,7 @@ function eDitar() {
   let Pepe = document.getElementById('lista').value 
     
     try {
-      fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe)
+      fetch('http://181.133.27.242:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       let caRita = () => {
@@ -104,7 +104,7 @@ function eDitar() {
   function moDificar() {
     let Pepe = document.getElementById('lista').value
      
-          fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe, {
+          fetch('http://181.133.27.242:8080/API/aves/'+Pepe, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ function eDitar() {
       async function cRear() {      
         try {
            
-            const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/');
+            const response = await fetch('http://181.133.27.242:8080/API/aves/');
             const data = await response.json();
            
             document.getElementById('formularioo').innerHTML =    
@@ -161,7 +161,7 @@ function eDitar() {
                 return alert('Todos los campos son obligatorios');
             }
 
-            const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/', {
+            const response = await fetch('http://181.133.27.242:8080/API/aves/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -186,7 +186,7 @@ function eDitar() {
 async function eLiminar() {
   let Pepe = document.getElementById('lista').value
    try {
-    const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe, {
+    const response = await fetch('http://181.133.27.242:8080/API/aves/'+Pepe, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
