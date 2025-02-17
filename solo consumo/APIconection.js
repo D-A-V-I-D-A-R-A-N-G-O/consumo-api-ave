@@ -1,6 +1,6 @@
 async function obtenerAves() {
     try {
-        const response = await fetch('http://localhost:8080/API/aves');
+        const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves');
         const data = await response.json();
         const avesContainer = document.getElementById('aves-container');
         console.log(data); 
